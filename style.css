@@ -10,18 +10,20 @@
 
 
 body{
-    background-color: rgb(3, 3, 43);
+    animation: gradient 10s linear alternate infinite;
     color: white;
+    background: linear-gradient(to left,rgb(1, 1, 63),black,rgb(56, 0, 93));
+
 }
 
 header{
     animation: gradient 30s linear alternate infinite;
-    text-align: center;
     padding: 10px;
     background: linear-gradient(to right,rgb(67, 67, 226),rgb(111, 11, 11),rgb(64, 5, 100));
     background-size: 300% 300%;
     border-radius: 10px;
     display: flex;
+    justify-content: center;
 }
 
 header img{
@@ -40,14 +42,79 @@ h1:hover{
 }
 
 section{
-    background-color: rgba(0, 0, 0, 0.918);
-    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.786);
+    margin: 30px;
+    text-align: center;
+    padding: 30px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 30px;
 }
 
-section > h2{
-    justify-items: center;
+section > .imagem{
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60%;
+    transition: transform 2s;
 }
+
+section > .imagem:hover{
+    transform: scale(0.8);
+    border: 0.5px solid rgba(255, 255, 255, 0.467);
+}
+
+section div {
+    background-color: rgba(12, 7, 59, 0.308);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+
+#sol{
+    background-image: url(images/sol.jpeg);
+}
+
+#mercurio{
+    background-image: url(images/Mercurio.jpeg);
+}
+
+#venus{
+    background-image: url(images/Venus.jpeg);
+}
+
+#terra{
+    background-image: url(images/Terra.jpeg);
+}
+
+#marte{
+    background-image: url(images/Marte.jpeg);
+}
+
+#jupiter{
+    background-image: url(images/jupiter.jpg);
+}
+
+#saturno{
+    background-image: url(images/Saturno2.jpeg);
+}
+
+#urano{
+    background-image: url(images/Urano.jpeg);
+}
+
+#netuno{
+    background-image: url(images/Netuno.jpeg);
+}
+
+
+
+
+
 
 @keyframes gradient {
     0%{
