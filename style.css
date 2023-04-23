@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+
+
 
 *{
     padding: 0px;
@@ -10,7 +13,7 @@
 
 
 body{
-    animation: gradient 10s linear infinite;
+
     color: white;
     background: linear-gradient(to left,rgb(1, 1, 63),black,rgb(56, 0, 93));
 
@@ -20,7 +23,7 @@ header{
     animation: gradient 30s linear alternate infinite;
     padding: 10px;
     background: linear-gradient(to right,rgb(67, 67, 226),rgb(111, 11, 11),rgb(64, 5, 100));
-    background-size: 300% 300%;
+    background-size: 300%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -50,6 +53,10 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 30px;
+    max-width: 60%;
+    min-width: none;
+    margin-inline: auto;
+
 }
 
 section > .imagem{
@@ -73,6 +80,27 @@ section div {
     padding: 10px;
 }
 
+section div p{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(42, 4, 75);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px black;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a p:hover{
+    color: rgb(110, 110, 174);
+    transition: 2s color;
+}
 
 
 #sol{
